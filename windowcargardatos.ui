@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WindowCargarDatos</class>
+ <widget class="QMainWindow" name="WindowCargarDatos">
+  <property name="windowModality">
+   <enum>Qt::WindowModal</enum>
+  </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>345</width>
+    <height>357</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>345</width>
+    <height>357</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>345</width>
+    <height>357</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="fuentes.qrc">
+    <normaloff>:/imagenes/Christal_app_kteatime_alt.png</normaloff>:/imagenes/Christal_app_kteatime_alt.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_6">
+    <item row="0" column="1">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>87</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>140</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <layout class="QGridLayout" name="gridLayout_5">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="fuentes.qrc">:/imagenes/logo.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>321</width>
+            <height>141</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Identificación</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="lbUser">
+             <property name="minimumSize">
+              <size>
+               <width>301</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Usuario</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLineEdit" name="leUser">
+             <property name="minimumSize">
+              <size>
+               <width>301</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maxLength">
+              <number>20</number>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="lbPass">
+             <property name="minimumSize">
+              <size>
+               <width>301</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Contraseña</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLineEdit" name="lePass">
+             <property name="minimumSize">
+              <size>
+               <width>301</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maxLength">
+              <number>12</number>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <widget class="QPushButton" name="pbAceptar">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="focusPolicy">
+             <enum>Qt::TabFocus</enum>
+            </property>
+            <property name="text">
+             <string>Aceptar</string>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="pbLimpiar">
+            <property name="minimumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Limpiar</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>139</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="1">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>87</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>345</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Nuevo</string>
+    </property>
+    <addaction name="actionNueva_Empresa"/>
+    <addaction name="actionRecuperar_Contrase_a_2"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuIdioma">
+    <property name="title">
+     <string>Idioma</string>
+    </property>
+    <addaction name="actionEspa_ol"/>
+    <addaction name="actionIngl_s"/>
+   </widget>
+   <widget class="QMenu" name="menuConexi_n">
+    <property name="title">
+     <string>Conexión</string>
+    </property>
+    <addaction name="actionBD_Remota"/>
+    <addaction name="actionDesconectar_BD_Remota"/>
+   </widget>
+   <widget class="QMenu" name="menuAcerca_de">
+    <property name="title">
+     <string>Acerca de</string>
+    </property>
+    <addaction name="actionAcerca_de_Qt"/>
+    <addaction name="actionAcerca_de_GestiStock_Software"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuIdioma"/>
+   <addaction name="menuConexi_n"/>
+   <addaction name="menuAcerca_de"/>
+  </widget>
+  <action name="actionNueva_Empresa">
+   <property name="icon">
+    <iconset resource="fuentes.qrc">
+     <normaloff>:/imagenes/maletin_empresa.png</normaloff>:/imagenes/maletin_empresa.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nueva Empresa</string>
+   </property>
+   <property name="toolTip">
+    <string>Nueva Empresa</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="fuentes.qrc">
+     <normaloff>:/imagenes/exit.png</normaloff>:/imagenes/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+  <action name="actionRecuperar_Contrase_a_2">
+   <property name="icon">
+    <iconset resource="fuentes.qrc">
+     <normaloff>:/imagenes/password.png</normaloff>:/imagenes/password.png</iconset>
+   </property>
+   <property name="text">
+    <string>Recuperar Contraseña</string>
+   </property>
+   <property name="toolTip">
+    <string>Recuperar Contraseña</string>
+   </property>
+  </action>
+  <action name="actionEspa_ol">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="fuentes.qrc">
+     <normaloff>:/imagenes/Idspain.png</normaloff>:/imagenes/Idspain.png</iconset>
+   </property>
+   <property name="text">
+    <string>Español</string>
+   </property>
+  </action>
+  <action name="actionIngl_s">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="fuentes.qrc">
+     <normaloff>:/imagenes/IdUnitedKingdom.png</normaloff>:/imagenes/IdUnitedKingdom.png</iconset>
+   </property>
+   <property name="text">
+    <string>Inglés</string>
+   </property>
+  </action>
+  <action name="actionBD_Remota">
+   <property name="icon">
+    <iconset resource="fuentes.qrc">
+     <normaloff>:/imagenes/irkick.png</normaloff>:/imagenes/irkick.png</iconset>
+   </property>
+   <property name="text">
+    <string>BD Remota</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de_Qt">
+   <property name="icon">
+    <iconset resource="fuentes.qrc">
+     <normaloff>:/imagenes/qtcreator.png</normaloff>:/imagenes/qtcreator.png</iconset>
+   </property>
+   <property name="text">
+    <string>Acerca de Qt</string>
+   </property>
+  </action>
+  <action name="actionDesconectar_BD_Remota">
+   <property name="icon">
+    <iconset resource="fuentes.qrc">
+     <normaloff>:/imagenes/desconectar.png</normaloff>:/imagenes/desconectar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Desconectar BD Remota</string>
+   </property>
+  </action>
+  <action name="actionAcerca_de_GestiStock_Software">
+   <property name="icon">
+    <iconset resource="fuentes.qrc">
+     <normaloff>:/imagenes/logoSolo.png</normaloff>:/imagenes/logoSolo.png</iconset>
+   </property>
+   <property name="text">
+    <string>Acerca de GestiStock Software</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="fuentes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,58 @@
+<RCC>
+    <qresource prefix="/">
+        <file>imagenes/Login Manager.png</file>
+        <file>imagenes/advancedsettings.png</file>
+        <file>imagenes/ark.png</file>
+        <file>imagenes/exit.png</file>
+        <file>imagenes/kfloppy.png</file>
+        <file>imagenes/kjobviewer.png</file>
+        <file>imagenes/kuser.png</file>
+        <file>imagenes/kword.png</file>
+        <file>imagenes/proveedor.png</file>
+        <file>imagenes/kchart.png</file>
+        <file>imagenes/kate.png</file>
+        <file>imagenes/password.png</file>
+        <file>imagenes/Volume Manager.png</file>
+        <file>imagenes/1322004324_shopping_trolley.png</file>
+        <file>imagenes/java.png</file>
+        <file>imagenes/Christal_app_kteatime_alt.png</file>
+        <file>imagenes/kexi.png</file>
+        <file>imagenes/noimagen.png</file>
+        <file>imagenes/favorites.png</file>
+        <file>imagenes/logo.png</file>
+        <file>imagenes/Tipo1.png</file>
+        <file>imagenes/graficaBarras.png</file>
+        <file>imagenes/curvaLinea.png</file>
+        <file>imagenes/sticks.png</file>
+        <file>imagenes/curvaVacia.png</file>
+        <file>imagenes/stepsPasos.png</file>
+        <file>imagenes/crucesRojas.png</file>
+        <file>imagenes/zip_unmount.png</file>
+        <file>imagenes/kexi-2.png</file>
+        <file>imagenes/kfm.png</file>
+        <file>imagenes/gplv3-127x51.png</file>
+        <file>imagenes/qtcreator.png</file>
+        <file>imagenes/gestiLogoReducido.png</file>
+        <file>imagenes/logoSolo.png</file>
+        <file>imagenes/personal.png</file>
+        <file>imagenes/irkick.png</file>
+        <file>imagenes/desconectar.png</file>
+        <file>imagenes/Idspain.png</file>
+        <file>imagenes/IdUnitedKingdom.png</file>
+        <file>imagenes/maletin_empresa.png</file>
+        <file>imagenes/shop.png</file>
+        <file>imagenes/shop add.png</file>
+        <file>imagenes/shop remove.png</file>
+        <file>imagenes/GOLD.png</file>
+        <file>imagenes/gold1.png</file>
+        <file>imagenes/connect.png</file>
+        <file>imagenes/restore.png</file>
+        <file>imagenes/add.png</file>
+        <file>imagenes/type.png</file>
+        <file>imagenes/activity.png</file>
+        <file>imagenes/addUser.png</file>
+        <file>imagenes/grafica.png</file>
+        <file>imagenes/articulo.png</file>
+        <file>imagenes/cambio.png</file>
+    </qresource>
+</RCC>

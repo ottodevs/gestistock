@@ -1,0 +1,54 @@
+#ifndef WIDGETVERPROVEEDORES_H
+#define WIDGETVERPROVEEDORES_H
+
+#include <QWidget>
+#include <QTranslator>
+#include <QStringList>
+
+#include "windowpantallaopcionesusuario.h"
+
+class WindowPantallaOpcionesUsuario;
+
+namespace Ui {
+    class WidgetVerProveedores;
+}
+
+class WidgetVerProveedores : public QWidget
+{
+    Q_OBJECT
+
+
+protected:
+    void changeEvent(QEvent*);
+
+public:
+    explicit WidgetVerProveedores(QString user,QMdiArea *ma, QWidget *parent=0);
+    ~WidgetVerProveedores();
+
+private slots:
+    void on_cbProveedor_currentIndexChanged(const QString &arg1);
+
+    void on_pbCambiarImagen_clicked();
+
+    void on_pbSalir_clicked();
+
+    void on_pbGuardarCambios_clicked();
+
+    void on_pbEliminar_clicked();
+
+private:
+    Ui::WidgetVerProveedores *ui;
+    QSqlQuery *cn;
+    WindowPantallaOpcionesUsuario *wp;
+    QString rutaImagen;
+    QByteArray ba;
+    WindowPantallaOpcionesUsuario *wpo;
+    QPixmap *imagenArticulo;
+    QMdiArea *mdi;
+    QSqlQuery *actualizar;
+    bool ImagenActualizada;
+    QTranslator translator;
+    QString usuarioActivo;
+};
+
+#endif // WIDGETVERPROVEEDORES_H
