@@ -303,7 +303,7 @@ void WindowCargarDatos::on_pbAceptar_clicked()
     QSqlQuery consult;
 
     //Consultamos desencriptando la clave
-    consult.exec("SELECT AES_DECRYPT(password,'MyPass') FROM usuarios WHERE nombreusuario = '"+ui->leUser->text()+"' and novisible = '0' ");
+    consult.exec("SELECT AES_DECRYPT(password,'MyPasswordEncrypt') FROM usuarios WHERE nombreusuario = '"+ui->leUser->text()+"' and novisible = '0' ");
 
         if(consult.first())
         {
