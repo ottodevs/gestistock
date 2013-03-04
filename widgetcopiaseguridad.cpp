@@ -32,7 +32,9 @@ void WidgetCopiaSeguridad::on_pbCrear_clicked()
 
         QStringList args;
 
-        args << "-uroot" << "-p1234" << "--single-transaction" << "bdgestistock";
+        //args << "-uroot" << "-p1234" << "bdgestistock";
+        //args << "--opt" << "--password=1234" << "--user=usergestistock" << "bdgestistock";
+        args << "--opt" << "--password=1234" << "--user=usergestistock" << "bdgestistock";
 
         pdn->setWindowModality(Qt::WindowModal);
 
@@ -40,13 +42,18 @@ void WidgetCopiaSeguridad::on_pbCrear_clicked()
         pdn->setWindowFlags(Qt::Tool | Qt::WindowTitleHint | Qt::CustomizeWindowHint);
 
         procesoCopia->setStandardOutputFile(ui->leDestino->text());
-        procesoCopia->start("mysqldump",args);
+
+        //Importante, en mi pc no tengo que poner ruta porque la tengo en el path
+        //procesoCopia->setWorkingDirectory("C:/MySQL/bin");
+
+        //qDebug() << procesoCopia->workingDirectory();
+
+        procesoCopia->start("mysqldump.exe",args);
 
         //Cuando haya terminado llama al slot copiaExitosa
         connect(procesoCopia,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(finalizado(int,QProcess::ExitStatus)));
 
         pdn->exec();
-
 }
 
 void WidgetCopiaSeguridad::on_pbExaminar_clicked()

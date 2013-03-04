@@ -62,7 +62,8 @@ void WidgetRestaurarCopiaSeguridad::on_pbRestaurar_clicked()
         pdn->setFixedSize(200,60);
 
         QStringList args;
-        args << "-uroot" << "-p1234" << "bdgestistock";
+
+        args << "--user=usergestistock" << "--password=1234" << "bdgestistock";
 
         pdn->setWindowModality(Qt::WindowModal);
 
@@ -72,7 +73,10 @@ void WidgetRestaurarCopiaSeguridad::on_pbRestaurar_clicked()
         procesoRestauracion = new QProcess;
 
         procesoRestauracion->setStandardInputFile(ui->leOrigen->text());
-        procesoRestauracion->start("mysql", args);
+
+        //Importante, en mi pc es con "mysql" a secas porque tengo la ruta en el path, pero en los demas pcs es con esto
+        //procesoRestauracion->setWorkingDirectory("C:/MySQL/bin");
+        procesoRestauracion->start("mysql.exe", args);
 
         connect(procesoRestauracion,SIGNAL(finished(int,QProcess::ExitStatus)),this,SLOT(finalizacion(int,QProcess::ExitStatus)));
 
