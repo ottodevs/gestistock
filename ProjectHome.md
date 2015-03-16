@@ -1,0 +1,3 @@
+GestiStock es un software cuyo objetivo principal es el control integral de almacenes. Permite la integración tanto de un lector de códigos de barras, como de la cámara web o la impresora. GestiStock contiene multitud de funcionalidades, como pueden ser, el envío de contraseñas al correo en caso de pérdida, la conexión a servidores remotos, la creación de documentos con la lista de la compra necesaria en cada momento...
+
+El software pueden descargarlo desde softonic: http://gestistock-software.softonic.com/
